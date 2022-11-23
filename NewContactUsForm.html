@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>Contact Us</title>
+<script>
+function validate()
+{  
+  var name1= document.getElementById("name1").value;
+  var phone1= document.getElementById("phone1").value;
+  var email1= document.getElementById("email1").value;
+  var message1= document.getElementById("message1").value;
+  if(name1.length<=3)
+  {
+     var text="enter a valid name of 4 letter";
+     errormessage.innerHTML=text;
+     return false;
+  }
+  if(isNaN(phone1)||phone1.length!=10)
+  {
+    var text="enter a valid phone number of 10 digits";
+    errormessage.innerHTML=text;
+    return false;   
+  }
+  if(email1.length<6||email1.indexOf("@")==-1)   
+  {
+     var text="enter a valid email id";
+     errormessage.innerHTML=text;
+     return false;
+  }
+  if(message1.length<=15)
+  {
+    var text="enter a valid message at least 15 characters";
+    errormessage.innerHTML=text;
+    return false; 
+  }
+  alert("form is submitted successfully");
+  return true;
+
+
+
+}
+</script>
+
+
+
+<style>
+*{box-sizing:border-box;
+outline:none;
+font-family:'sans-serif';
+}
+
+body{background:#fece0c;}
+.wrapper{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-5%);
+	max-width:350px;
+	width:80%;
+	background-color:#38006b;
+	padding:20px;
+	border-radius:25px;
+	cursor:pointer;
+}
+.wrapper h2{
+	text-align:center;
+	margin-bottom:20px;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	color:lightcoral;
+}
+.wrapper .inputfield{ margin-bottom:10px;}
+
+.wrapper .inputfield input[type=text],
+.wrapper textarea{
+	border:1px solid red;
+	width:100%;
+	padding:10px;
+}
+.wrapper textarea{
+	resize:none;
+	height:80px;
+}
+.wrapper .btn input[type=submit]{
+	border:0px;
+	margin-top:15px;
+	padding:10px;
+	text-align:center;
+	width:100%;
+	background:darkgrey;
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:5px;
+	font-weight:bold;
+	border-radius:25px;
+	cursor:pointer;
+}
+#errormessage
+{margin-bottom:20px;
+background:#fe8b8e;
+padding:0px;
+text-align:center;
+font-size:14px;
+transition:all 0.5s ease;
+}
+.header{background-color:mistyrose;padding:20px;font-color:white;}
+.footer{background-color:lightblue;padding:10px;text-align:center;font-size:20px;color:black;}
+.container{width:80%;margin:0px;}
+header{background-color:#C23508;}
+nav{float:right;}
+nav ul{list-style-type:none;margin:5px;padding:5px;}
+header::after{content:'';display:table;clear:both;}
+nav li{display:inline-block;margin-left:10px ;padding-top:23px;margin-right:90px;position:relative}
+nav a{color:#c3fdff;text-transform:uppercase;font-size:20px;text-decoration:none}
+nav a:hover{color:#05F082;}
+nav a::before{content:'';height:5px;background-color:#01579b;position:absolute;top:0px;width:0%;transition:all ease-in-out 250ms;}
+nav a:hover::before{width:100%}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class=header>
+<img src= "Travel Images.jpg" height=200 width=300 aling="center">
+</div>
+<header>
+<div class=container>
+<h1 class=logo></h1>
+<nav>
+<ul>
+<li><a href="Travel Website.html">Home</a></li>
+<li><a href="About.html">About Us</a></li>
+<li><a href="TravelWebsiteHotels.html">Hotels</a></li>
+<li><a href="NewContactUsForm.html">Contact Us</a></li>
+</ul></div></nav></header>
+<br><br><br><br><br><br>
+<div class=wrapper>
+      <h2>Contact Us</h2>
+      <form id=myform onsubmit="return validate();" method=post action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfZdfW-bDHFdW42kbl35MxsvQBNyCJwfrXmPHqGXGJxxXYnbA/formResponse">
+	
+	<div class=inputfield>
+	<input type="text" placeholder="Name" id="name1" name="entry.255803265">
+	</div>
+	<div class=inputfield>
+	<input type="text" placeholder="Phone" id="phone1" name="entry.1286208797">
+	</div>
+<div class=inputfield>
+	<input type="text" placeholder="Email" id="email1" name="entry.1020481442">
+	</div>
+<div class=inputfield>
+	<textarea placeholder="Message" id="message1" name="entry.509298367"></textarea>
+</div>
+<div class=btn>
+	<input type="submit">
+</div>
+</form>
+<div id="errormessage"></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="footer"><p>To know about switzerland visit.....
+<a href="https://google.com">Switzerland<----</a></p></div>
+</body>
+</html>
